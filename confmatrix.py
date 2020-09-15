@@ -7,7 +7,6 @@ y_true = np.load('./truey.npy')
 y_pred = np.load('./predy.npy')
 cm = confusion_matrix(y_true, y_pred)
 labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
-title='Confusion matrix'
 print(cm)
 
 plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
